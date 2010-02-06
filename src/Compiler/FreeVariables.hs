@@ -1,3 +1,4 @@
+{-# LANGUAGE TypeOperators #-}
 module Compiler.FreeVariables
 ( FreeVarA (..)
 , ExpressionFV

@@ -1,3 +1,4 @@
+{-# LANGUAGE MultiParamTypeClasses #-}
 module Generic.Control.Functor where
 
 import Prelude ()

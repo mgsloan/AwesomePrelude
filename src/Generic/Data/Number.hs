@@ -1,3 +1,4 @@
+{-# LANGUAGE EmptyDataDecls, FlexibleInstances #-}
 module Generic.Data.Number where
 
 import Prelude ()

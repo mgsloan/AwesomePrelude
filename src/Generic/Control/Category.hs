@@ -1,3 +1,4 @@
+{-# LANGUAGE TypeOperators, MultiParamTypeClasses #-}
 module Generic.Control.Category where
 
 import Prelude ()

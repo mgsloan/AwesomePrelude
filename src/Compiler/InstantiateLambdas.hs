@@ -1,3 +1,4 @@
+{-# LANGUAGE TypeOperators, GADTs #-}
 module Compiler.InstantiateLambdas (instantiate, dump) where
 
 import Compiler.Generics

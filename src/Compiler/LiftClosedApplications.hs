@@ -1,3 +1,4 @@
+{-# LANGUAGE TypeOperators #-}
 module Compiler.LiftClosedApplications (lift) where
 
 import Compiler.FreeVariables (DefinitionsFV, FreeVarA (..))

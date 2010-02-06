@@ -1,3 +1,4 @@
+{-# LANGUAGE MultiParamTypeClasses #-}
 module Generic.Control.Alternative where
 
 import Prelude ()

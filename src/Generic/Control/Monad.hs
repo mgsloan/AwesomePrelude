@@ -1,3 +1,4 @@
+{-# LANGUAGE EmptyDataDecls, FlexibleContexts, FlexibleInstances, MultiParamTypeClasses #-}
 module Generic.Control.Monad where
 
 import Prelude ()

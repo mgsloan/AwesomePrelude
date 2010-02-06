@@ -1,3 +1,4 @@
+{-# LANGUAGE EmptyDataDecls, FlexibleInstances, MultiParamTypeClasses #-}
 module Generic.Data.Maybe where
 
 import Prelude ()

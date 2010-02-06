@@ -1,3 +1,4 @@
+{-# LANGUAGE TypeOperators #-}
 module Compiler.CommonDefinitions where
 
 import Compiler.Expression
