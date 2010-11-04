@@ -1,4 +1,9 @@
-{-# LANGUAGE FlexibleInstances, FlexibleContexts, MultiParamTypeClasses #-}
+{-# OPTIONS -fno-warn-orphans #-}
+{-# LANGUAGE
+    FlexibleInstances
+  , FlexibleContexts
+  , MultiParamTypeClasses
+  #-}
 module Generic.Data.List where
 
 import Prelude ()
@@ -25,7 +30,7 @@ replicate :: (ListC j, NumC j, Eq j Num, BoolC j, FunC j) => j Num -> j a -> j [
 replicate n a = fix (\r -> lam (\y -> bool nil (a `cons` (r `app` (y - 1))) (y == 0))) `app` n
 
 (++) :: (FunC j, ListC j) => j [a] -> j [a] -> j [a]
-xs ++ ys = foldr cons ys xs
+(++) = foldr cons
 
 length :: (FunC j, NumC j, ListC j) => j [a] -> j Num
 length = foldr (\_ -> (+1)) 0

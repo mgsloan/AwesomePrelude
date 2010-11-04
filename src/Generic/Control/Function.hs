@@ -1,8 +1,17 @@
-{-# LANGUAGE FlexibleInstances, MultiParamTypeClasses #-}
+{-# LANGUAGE
+    FlexibleInstances
+  , MultiParamTypeClasses
+  , TypeOperators
+  #-}
 module Generic.Control.Function where
 
 import qualified Prelude
-import Generic.Control.Category
+
+infixr 9 .
+
+class Category j (~>) where
+  id  :: (j a ~> j a)
+  (.) :: (j b ~> j c) -> (j a ~> j b) -> (j a ~> j c)
 
 undefined :: a
 undefined = Prelude.undefined

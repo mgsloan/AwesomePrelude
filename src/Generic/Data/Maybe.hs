@@ -4,7 +4,6 @@ module Generic.Data.Maybe where
 import Prelude ()
 import Generic.Data.List
 import Generic.Control.Function
-import Generic.Control.Category
 import Generic.Control.Functor
 
 data Maybe a
